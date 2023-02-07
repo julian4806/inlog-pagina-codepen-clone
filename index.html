@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='script.js' defer></script>
 </head>
 
 <body>
@@ -40,6 +41,36 @@
                 </button>
                 <span>Or,</span>
                 <button class="email">Sign Up with Email</button>
+                <form action="" style="display: none;">
+                    <div class="input">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input">
+                        <label for="username">Choose a username</label>
+                        <input type="text" id="username" name="username">
+                        <span class="username-link">codepen.io/username</span>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="input">
+                        <label for="password">Choose Password</label>
+                        <input type="password" id="password" name="password">
+                        <span class="password-criteria-title">Your password must:</span>
+                        <ul class="password-criteria-content">
+                            <li>Include an UPPER and lowercase letter
+                            </li>
+                            <li>Include a number
+                            </li>
+                            <li>Include one or more of these special characters: .@$!%*#?&><)(^-_ </li>
+                            <li>Be between 8 and 100 characters
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" name="submit">Submit</button>
+                </form>
                 <p>By signing up, you agree to CodePen's
                     <a href="#">Terms of Service
                     </a>,

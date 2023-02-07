@@ -94,6 +94,9 @@ body > .center {
 .wrapper .content > button:hover {
   background-color: black;
 }
+.wrapper .content > button:active {
+  transform: translateY(2px);
+}
 .wrapper .content > .twitter {
   background-color: #1da1f2;
 }
@@ -106,9 +109,62 @@ body > .center {
 .wrapper .content > .email {
   background-color: #444857;
   width: 50%;
+  text-align: center;
 }
 .wrapper .content > .email:hover {
   background-color: rgba(68, 72, 87, 0.8470588235);
+}
+.wrapper .content > form {
+  flex-direction: column;
+  gap: 15px;
+}
+.wrapper .content > form > .input {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .content > form > .input .username-link,
+.wrapper .content > form > .input .password-criteria-title {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.wrapper .content > form > .input .password-criteria-content {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 30px;
+}
+.wrapper .content > form > .input .password-criteria-content > li {
+  text-align: left;
+}
+.wrapper .content > form > .input > input {
+  height: 30px;
+  padding: 5px;
+  background-color: #d5d7de;
+  border: none;
+  border-radius: 3px;
+}
+.wrapper .content > form > .input > input:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #717790;
+  -moz-box-shadow: inset 0px 0px 0px 2px #717790;
+  box-shadow: inset 0px 0px 0px 2px #717790;
+  background-color: #fff;
+}
+.wrapper .content > form > button[type=submit] {
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #47cf73;
+  text-align: center;
+  width: 130px;
+  cursor: pointer;
+}
+.wrapper .content > form > .input-username > span {
+  font-size: 10px;
 }
 .wrapper .content > p > a {
   color: #6ca9f4;

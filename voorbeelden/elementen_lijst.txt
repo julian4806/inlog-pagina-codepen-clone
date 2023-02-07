@@ -1,0 +1,7 @@
+- Meerdere knoppen met inlogmethoden
+- Gebruiksvriendelijke interface
+- Een lijst met uitleg over je mogelijkheden
+- Wachtwoord tonen knop
+- Input veld voor je Naam
+- Input veld voor je Wachtwoord
+- Verzendknop
